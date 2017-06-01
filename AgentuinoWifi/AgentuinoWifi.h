@@ -31,7 +31,6 @@
 //Frees a pointer only if it is !NULL and sets its value to NULL. 
 
 #include "Arduino.h"
-#include "WifiUdp.h"
 
 extern "C" {
 	// callback function

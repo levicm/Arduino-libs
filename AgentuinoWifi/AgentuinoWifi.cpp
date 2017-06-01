@@ -23,7 +23,7 @@
 //
 
 #include "AgentuinoWifi.h"
-#include "WifiUdp.h"
+#include <WifiUdp.h>
 
 WiFiUDP Udp;
 SNMP_API_STAT_CODES AgentuinoWifiClass::begin()
