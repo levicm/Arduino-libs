@@ -1,7 +1,6 @@
-/*
-  Uptime.cpp - Uptime Library - description
-*/
-
+/**
+ * Uptime.cpp - Uptime Library - description
+ */
 // ensure this library description is only included once
 #ifndef Uptime_h
 #define Uptime_h
@@ -24,28 +23,27 @@ class Uptime
     // setters
     // getters
 	long totalSeconds(void);
-
     int days(void);
-    int hours(void);
-    int minutes(void);
-    int seconds(void);
+    byte hours(void);
+    byte minutes(void);
+    byte seconds(void);
     int milliseconds(void);
 
 	// others
-    void print(void);
+	void begin(boolean persistent = false);
 	void compute(void);
+	void compute(long elapsedMillis);
+	void persist(long sleepTimeInMillis = 0);
+  void print(void);
 
   // library-accessible "private" interface
   private:
-    long TotalSeconds;
-
-    long Days;
-    int Hours;
-    int Minutes;
-    int Seconds;
-    int Milliseconds;
-
-    long lastMillis;
+    long _totalSeconds;
+    int _days;
+    byte _hours;
+    byte _minutes;
+    byte _seconds;
+    int _milliseconds;
+    long _lastMillis;
 };
-
 #endif
