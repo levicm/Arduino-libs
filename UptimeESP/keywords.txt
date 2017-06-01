@@ -6,20 +6,22 @@
 # Datatypes (KEYWORD1)
 #######################################
 
-Uptime	KEYWORD1
+Uptime    KEYWORD1
 
 #######################################
 # Methods and Functions (KEYWORD2)
 #######################################
 
-totalSeconds	KEYWORD2
-milliseconds	KEYWORD2
-seconds			KEYWORD2
-minutes			KEYWORD2
-hours			KEYWORD2
-days			KEYWORD2
-print			KEYWORD2
-compute			KEYWORD2
+totalSeconds    KEYWORD2
+milliseconds    KEYWORD2
+seconds         KEYWORD2
+minutes         KEYWORD2
+hours           KEYWORD2
+days            KEYWORD2
+begin           KEYWORD2
+compute         KEYWORD2
+persist         KEYWORD2
+print           KEYWORD2
 
 #######################################
 # Constants (LITERAL1)

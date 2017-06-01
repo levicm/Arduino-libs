@@ -1,6 +1,6 @@
-==============
-Uptime Library
-==============
+===================================================
+Uptime Library with persistence support for ESP8266
+===================================================
 
 
 How to install
