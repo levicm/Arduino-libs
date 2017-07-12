@@ -4,7 +4,7 @@
  * ESP specific library with persistence support.
  * To use the persistence support, call begin(true) e call persist() 
  * before ESP.deepSleep(). 
- * If you like to acount the sleep time, informe it calling persist(sleepTimeInMillis).
+ * If you like to account the sleep time, inform it calling persist(sleepTimeInMillis).
  *
  * Levi Mota - levi.mota@gmail.com | http://github.com/levicm
  */
@@ -140,11 +140,11 @@ void Uptime::compute(long elapsedMillis) {
 }
 
 void Uptime::persist(long sleepTimeInMillis) {
-  // The persistence model is in 
+  // The persistence model is:
   // [b0|b1|b2|b3|b4|b5|b6|b7]
-  // b0 and b1 : UP
-  // b2 and b3 : _millisecond  (2 bytes int)
-  // b4 to b7  : _totalSeconds (4 bytes long) 
+  // b0 and b1 : characters "UP"
+  // b2 and b3 : value of _millisecond  (2 bytes int)
+  // b4 to b7  : value of _totalSeconds (4 bytes long) 
   compute();
   #if defined(DEBUG)
   print();
